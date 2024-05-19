@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "JetBrainsMono-Regular";
+  src: url("../fonts/JetBrainsMono-Regular.ttf") format("truetype");
+}
+
+.body-background {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../images/nubelson-fernandes--Xqckh_XVU4-unsplash.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.font-main {
+  font-family: "JetBrainsMono-Regular", sans-serif;
+}
