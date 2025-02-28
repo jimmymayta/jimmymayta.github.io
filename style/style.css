@@ -1,0 +1,176 @@
+@import url('consoletext.css');
+
+:root {
+  --Blue50: rgb(239, 246, 255);
+  --Color1: rgb(0, 41, 99);
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("../fonts/JetBrainsMono-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-jetbrains {
+  font-family: "JetBrains Mono", sans-serif;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+body {
+  background-color: var(--Blue50);
+}
+
+.carousel-item img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+.header-background {
+  background-color: rgba(0, 0, 0, 0.71);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: absolute;
+  margin: 0px;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 1;
+}
+
+.header-container {
+  margin-top: -200px;
+}
+
+/* Extra small: <576px */
+@media (max-width: 575px) {
+  .mainimage {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+  }
+}
+
+/* Small: ≥576px */
+@media (min-width: 576px) and (max-width: 767px) {
+  .mainimage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+}
+
+/* Medium: ≥768px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .mainimage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+}
+
+/* Large: ≥992px */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .mainimage {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+  }
+}
+
+/* Extra large: ≥1200px */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .mainimage {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+}
+
+/* Extra extra large: ≥1400px */
+@media (min-width: 1400px) {
+  .mainimage {
+    width: 203px;
+    height: 203px;
+    border-radius: 50%;
+  }
+}
+
+.text {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.button-offcanvas {
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  z-index: 2;
+}
+
+.button-offcanvas-close {
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+}
+
+.menu-offcanvas {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: absolute;
+  margin: 0px;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  color: white;
+  z-index: 3;
+  visibility: hidden;
+}
+
+.offcanvas-content {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+
+.footer {
+  color: rgba(255, 255, 255, 0.05);
+  text-align: center;
+  padding: 2px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+
+

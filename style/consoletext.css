@@ -1,0 +1,16 @@
+.hidden {
+  opacity: 0;
+}
+.console-container {
+  text-align: left;
+  display: block;
+  position: absolute;
+  color: white;
+  margin: auto;
+}
+.console-underscore {
+  display: inline-block;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
